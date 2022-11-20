@@ -3,7 +3,15 @@
         <title>Adrian Marcu</title>
         <link>https://adrian-marcu.github.io/</link>
         <description>This is my cool site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 04 Nov 2022 19:18:16 &#43;0200</lastBuildDate>
             <atom:link href="https://adrian-marcu.github.io/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
+        <item>
+    <title>First_post</title>
+    <link>https://adrian-marcu.github.io/posts/first_post/</link>
+    <pubDate>Fri, 04 Nov 2022 19:18:16 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://adrian-marcu.github.io/posts/first_post/</guid>
+    <description><![CDATA[asdasdasf]]></description>
+</item>
+</channel>
 </rss>

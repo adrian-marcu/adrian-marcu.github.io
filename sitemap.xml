@@ -2,6 +2,10 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://adrian-marcu.github.io/</loc></url><url>
+            <loc>https://adrian-marcu.github.io/contact/</loc><lastmod>2022-11-20T15:32:55&#43;02:00</lastmod></url><url>
+            <loc>https://adrian-marcu.github.io/</loc><lastmod>2022-11-04T19:18:16&#43;02:00</lastmod></url><url>
+            <loc>https://adrian-marcu.github.io/posts/first_post/</loc><lastmod>2022-11-04T19:18:16&#43;02:00</lastmod></url><url>
+            <loc>https://adrian-marcu.github.io/posts/</loc><lastmod>2022-11-04T19:18:16&#43;02:00</lastmod></url><url>
+            <loc>https://adrian-marcu.github.io/about/</loc><lastmod>2022-11-02T23:44:54&#43;02:00</lastmod></url><url>
             <loc>https://adrian-marcu.github.io/categories/</loc></url><url>
             <loc>https://adrian-marcu.github.io/tags/</loc></url></urlset>
