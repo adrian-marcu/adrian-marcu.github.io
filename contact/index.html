@@ -5,8 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <title>Contact - Adrian Marcu</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="Contact" />
-<meta property="og:description" content="sdfsfdYou can contact us here!
-Name E-mail address Message Send " />
+<meta property="og:description" content="You can contact me here!
+Name
+E-mail address
+Message
+Send " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://adrian-marcu.github.io/contact/" /><meta property="article:section" content="" />
 <meta property="article:published_time" content="2022-11-20T15:32:55+02:00" />
@@ -14,8 +17,11 @@ Name E-mail address Message Send " />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Contact"/>
-<meta name="twitter:description" content="sdfsfdYou can contact us here!
-Name E-mail address Message Send "/>
+<meta name="twitter:description" content="You can contact me here!
+Name
+E-mail address
+Message
+Send "/>
 <meta name="application-name" content="My cool siteeeee">
 <meta name="apple-mobile-web-app-title" content="My cool siteeeee"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -67,18 +73,17 @@ Name E-mail address Message Send "/>
             </a></div>
     </div>
 </header><main class="main">
-                <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Contact</h1><div class="content" id="content"><p>sdfsfdYou can contact us here!</p>
+                <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Contact</h1><div class="content" id="content"><p>You can contact me here!</p>
 <style>
-.col-4 {
+.for-font-size {
   padding: 0;
   margin: 0;
   background-color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
 }
 
-.col-4 {
+.for-font-size {
   background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -96,39 +101,74 @@ Name E-mail address Message Send "/>
     background-position: 600px;
   }
 }
+
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 0px 0px 0px;
+  cursor: pointer;
+  border-radius: 6px 6px 6px 6px;
+}
+
+
+textarea:focus {
+    background: none repeat scroll 0 0 #FFFFFF;
+    outline-width: 0;
+}
+
+
+.form-control {
+  width: 100%;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+  border-image: none;
+  border-radius: 6px 6px 6px 6px;
+  border-style: solid solid solid solid;
+  border-width: 1px 1px 1px 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 1) inset;
+  color: #555555;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  padding: 5px 8px;
+  transition: background-color 0.6s ease 1s;
+}
+
+span {
+ width: 11px;
+ padding-right: 15px;
+}
+
 </style>
 <form method="post" action="https://forms.un-static.com/forms/3eec99387bf56de24adf7f477d51be677ceea5cd">
   <div class="form-group row">
-    <label for="name" class="col-4 col-form-label">Name</label>
-    <div class="col-8">
-      <div class="input-group">
-        <div class="input-group-addon">
-          <i class="fa fa-user"></i>
-        </div>
+        <p class="for-font-size"><span class="fa fa-user"></span>Name</p>
         <input id="name" name="name" placeholder="Please enter your name" type="text" required="required" class="form-control">
-      </div>
-    </div>
   </div>
   <div class="form-group row">
-    <label for="email" class="col-4 col-form-label">E-mail address</label>
-    <div class="col-8">
-      <div class="input-group">
-        <div class="input-group-addon">
-          <i class="fa fa-envelope"></i>
-        </div>
+         <p class="for-font-size"><span class="fa fa-envelope"></span>E-mail address</p>
         <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required" class="form-control">
-      </div>
-    </div>
   </div>
   <div class="form-group row">
-    <label for="message" class="col-4 col-form-label">Message</label>
+    <p class="for-font-size"><span class="fa fa-message"></span>Message</p>
     <div class="col-8">
-      <textarea id="message" name="message" cols="40" rows="10" required="required" class="form-control"></textarea>
+      <textarea id="message" name="message" cols="70" rows="10" required="required" class="form-control"></textarea>
     </div>
   </div>
   <div class="form-group row">
     <div class="offset-4 col-8">
-      <button name="submit" type="submit" class="btn btn-primary">Send</button>
+      <button class="button" name="submit" type="submit" class="btn btn-primary">Send</button>
     </div>
   </div>
 </form>
