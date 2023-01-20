@@ -1,16 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Adrian Marcu</title>
-        <link>https://adrian-marcu.github.io/</link>
+        <link>https://adrian-marcu.com/</link>
         <description>Adrian Marcu Senior Software Engineer Freelancer</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 04 Nov 2022 19:18:16 &#43;0200</lastBuildDate>
-            <atom:link href="https://adrian-marcu.github.io/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="https://adrian-marcu.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Freelancing Isn&#39;t as Scary as you Think</title>
-    <link>https://adrian-marcu.github.io/posts/firstpost/</link>
+    <link>https://adrian-marcu.com/posts/freelancing/</link>
     <pubDate>Fri, 04 Nov 2022 19:18:16 &#43;0200</pubDate>
     <author>Adrian Marcu</author>
-    <guid>https://adrian-marcu.github.io/posts/firstpost/</guid>
+    <guid>https://adrian-marcu.com/posts/freelancing/</guid>
     <description><![CDATA[Are you a software developer considering freelancing or an established freelancer trying to maintain your position in the market?
 Whatever your circumstance, it can be challenging to keep up with the most recent trends and best practices in the world of freelancing as a software developer because it is continuously changing. We&rsquo;ll look at some of the crucial factors for becoming and continuing to be a successful freelance software developer in this blog post.]]></description>
 </item>
