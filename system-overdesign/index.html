@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Pitfalls when overdesigning a system. - Adrian Marcu</title><meta name="Description" content="A blog about the pitfalls of overdesigning a system"><meta property="og:title" content="Pitfalls when overdesigning a system." />
+<meta property="og:description" content="A blog about the pitfalls of overdesigning a system" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://adrian-marcu.com/system-overdesign/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-20T14:16:53+02:00" />
+<meta property="article:modified_time" content="2023-01-20T14:16:53+02:00" /><meta property="og:site_name" content="Adrian Marcu Senior Software Engineer Freelancer" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pitfalls when overdesigning a system."/>
+<meta name="twitter:description" content="A blog about the pitfalls of overdesigning a system"/>
+<meta name="application-name" content="My cool siteeeee">
+<meta name="apple-mobile-web-app-title" content="My cool siteeeee"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://adrian-marcu.com/system-overdesign/" /><link rel="prev" href="https://adrian-marcu.com/freelancing/" /><link rel="next" href="https://adrian-marcu.com/third/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Pitfalls when overdesigning a system.",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/adrian-marcu.com\/system-overdesign\/"
+        },"genre": "posts","wordcount":  715 ,
+        "url": "https:\/\/adrian-marcu.com\/system-overdesign\/","datePublished": "2023-01-20T14:16:53+02:00","dateModified": "2023-01-20T14:16:53+02:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Adrian Marcu"
+            },"description": "A blog about the pitfalls of overdesigning a system"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" class = "hreftitle" title="Adrian Marcu"><img
+        rel="preload"
+        fetchpriority="high"
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/AdrianNewLogo.png"
+        data-srcset="/images/AdrianNewLogo.png, /images/AdrianNewLogo.png 1.5x, /images/AdrianNewLogo.png 2x"
+        data-sizes="auto"
+        alt="/images/AdrianNewLogo.png"
+        title="/images/AdrianNewLogo.png" width="442" height="78" /></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Posts"> Posts </a><a class="menu-item" href="/about/" title="About"> About </a><a class="menu-item" href="/contact/" title="Contact"> Contact </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" class = "hreftitle" title="Adrian Marcu"><img
+        rel="preload"
+        fetchpriority="high"
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/AdrianNewLogo.png"
+        data-srcset="/images/AdrianNewLogo.png, /images/AdrianNewLogo.png 1.5x, /images/AdrianNewLogo.png 2x"
+        data-sizes="auto"
+        alt="/images/AdrianNewLogo.png"
+        title="/images/AdrianNewLogo.png" width="442" height="78" /></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="Posts">Posts</a><a class="menu-item" href="/about/" title="About">About</a><a class="menu-item" href="/contact/" title="Contact">Contact</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Pitfalls when overdesigning a system.</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://adrian-marcu.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Adrian Marcu</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-20">2023-01-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;715 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="content" id="content"><p>From experience I can tell you that I&rsquo;ve seen this pattern many times. I was getting too excited when starting a new project and I would think of alot of side features rather than doing the minimum viable solution. It&rsquo;s almost like when you get distracted doing all the side quests first in a video game and in the end you can&rsquo;t find the motivation to do the very thing that got you interested in the first place.</p>
+<p>I was thinking of complex security, filters, validators, permissions, low level design, code style, CI/CD pipelines, documentation and the list can continue. As you can see I was not focusing on the actual value that the system would provide. The core functionality. The <strong>Minimum Viable Offer</strong>.</p>
+<p>As you can see the solution of this is to take a step back. Cut the excitement, collect yourself and think clearly.</p>
+<p>&ldquo;<em>A complex system that works is invariably found to have evolved from a simple system that worked</em>&rdquo; according to John Gall&rsquo;s law, which bears his name.
+This idea is relevant to software engineering, especially when it comes to designing and prototyping intricate systems.</p>
+<p>It can be tempting to try to address every issue and foresee every requirement when designing a complicated system.
+This strategy, though, might result in overengineering and a system that is difficult to comprehend and maintain.</p>
+<p>Simple systems are more likely to function and develop over time, as Gall&rsquo;s Law serves as a reminder.
+Therefore, software engineers should start with a minimally viable solution and gradually add complexity as needed when prototyping and designing complex systems.</p>
+<p>For example in software engineering nowadats when designing a microservice system, it is important to keep in mind the principle of simplicity. A complex system that is difficult to understand and maintain is likely to cause problems in the long run. By keeping the design of the system simple, software engineers can ensure that it is more likely to work and be able to evolve over time. The best method for creating systems that function is to start by creating simple systems that pass the environment&rsquo;s current selection tests, then gradually improve them.</p>
+<p>This enables a more gradual and evolutionary approach, which reduces the likelihood of creating a system that is difficult to comprehend and maintain.</p>
+<p>When beginning to design a complex system, another trap to watch out for is trying to foresee all potential future needs and requirements.
+This might result in a system that is overengineered and unusable due to its complexity.
+It is preferable to concentrate on the needs and requirements of the present and then iteratively enhance and evolve the system over time.</p>
+<p>Google&rsquo;s Waymo self-driving car project, which was in its early stages of development, provides one illustration of how complex systems cannot be prototyped without first being subjected to environmental testing.
+Without performing adequate environmental testing, Google concentrated its early efforts on creating the algorithms and sensors for the self-driving car.</p>
+<p>When the car was tested on actual roads, this caused a number of problems.
+For instance, the car&rsquo;s sensors had trouble spotting certain things, like bicycles, and the navigation system had trouble navigating in certain weather conditions, like snow or heavy rain.
+These problems weren&rsquo;t identified until the car was tested on actual roads, which added time and money to the development process.</p>
+<p>The 2013 introduction of the healthcare.gov website serves as another example of how complicated systems shouldn&rsquo;t be prototypically tested before being put into use.
+A group of contractors created the website as a component of the Affordable Care Act, often known as Obamacare.</p>
+<p>When the website first went up, it had a number of technical problems, including slow page loads, error warnings, and trouble setting up user accounts.
+These problems were brought on by inadequate testing and a lack of collaboration among the numerous website contractors.</p>
+<p>Gall&rsquo;s Law serves as a reminder that straightforward systems are more likely to function properly and develop over time.
+When developing and creating complex systems, software developers should keep this idea in mind to avoid pitfalls like trying to fix every issue at once and to foresee all potential demands and requirements.
+Instead, they ought to concentrate on the demands and needs of the moment before iteratively developing and improving the system through time.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-01-20</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://adrian-marcu.com/system-overdesign/" data-title="Pitfalls when overdesigning a system."><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://adrian-marcu.com/system-overdesign/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://adrian-marcu.com/system-overdesign/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/freelancing/" class="prev" rel="prev" title="Freelancing Isn&#39;t as Scary as you Think"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Freelancing Isn't as Scary as you Think</a>
+            <a href="/third/" class="next" rel="next" title="Third">Third<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Designed by Adrian Marcu
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
