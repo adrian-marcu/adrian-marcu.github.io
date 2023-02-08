@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Another perspective on microservices architecture - Adrian Marcu</title><meta name="Description" content="Discover the advantages and disadvantages of microservice architecture for your startup. Learn about the impact on scalability, resilience, speed of development, and cost. Compare the benefits of microservices with those of a monolithic architecture to make an informed decision for your business. Read our comprehensive guide now."><meta property="og:title" content="Another perspective on microservices architecture" />
+<meta property="og:description" content="Discover the advantages and disadvantages of microservice architecture for your startup. Learn about the impact on scalability, resilience, speed of development, and cost. Compare the benefits of microservices with those of a monolithic architecture to make an informed decision for your business. Read our comprehensive guide now." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://adrian-marcu.com/another-perspective-on-microservices/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-27T00:42:45+02:00" />
+<meta property="article:modified_time" content="2023-01-27T00:42:45+02:00" /><meta property="og:site_name" content="Adrian Marcu Senior Software Engineer Freelancer" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Another perspective on microservices architecture"/>
+<meta name="twitter:description" content="Discover the advantages and disadvantages of microservice architecture for your startup. Learn about the impact on scalability, resilience, speed of development, and cost. Compare the benefits of microservices with those of a monolithic architecture to make an informed decision for your business. Read our comprehensive guide now."/>
+<meta name="application-name" content="My cool siteeeee">
+<meta name="apple-mobile-web-app-title" content="My cool siteeeee"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://adrian-marcu.com/another-perspective-on-microservices/" /><link rel="prev" href="https://adrian-marcu.com/system-overdesign/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Another perspective on microservices architecture",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/adrian-marcu.com\/another-perspective-on-microservices\/"
+        },"genre": "posts","wordcount":  551 ,
+        "url": "https:\/\/adrian-marcu.com\/another-perspective-on-microservices\/","datePublished": "2023-01-27T00:42:45+02:00","dateModified": "2023-01-27T00:42:45+02:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Adrian Marcu"
+            },"description": "Discover the advantages and disadvantages of microservice architecture for your startup. Learn about the impact on scalability, resilience, speed of development, and cost. Compare the benefits of microservices with those of a monolithic architecture to make an informed decision for your business. Read our comprehensive guide now."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" class = "hreftitle" title="Adrian Marcu"><img
+        rel="preload"
+        fetchpriority="high"
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/AdrianNewLogo.png"
+        data-srcset="/images/AdrianNewLogo.png, /images/AdrianNewLogo.png 1.5x, /images/AdrianNewLogo.png 2x"
+        data-sizes="auto"
+        alt="/images/AdrianNewLogo.png"
+        title="/images/AdrianNewLogo.png" width="442" height="78" /></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Posts"> Posts </a><a class="menu-item" href="/about/" title="About"> About </a><a class="menu-item" href="/contact/" title="Contact"> Contact </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" class = "hreftitle" title="Adrian Marcu"><img
+        rel="preload"
+        fetchpriority="high"
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/AdrianNewLogo.png"
+        data-srcset="/images/AdrianNewLogo.png, /images/AdrianNewLogo.png 1.5x, /images/AdrianNewLogo.png 2x"
+        data-sizes="auto"
+        alt="/images/AdrianNewLogo.png"
+        title="/images/AdrianNewLogo.png" width="442" height="78" /></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="Posts">Posts</a><a class="menu-item" href="/about/" title="About">About</a><a class="menu-item" href="/contact/" title="Contact">Contact</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Another perspective on microservices architecture</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://adrian-marcu.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Adrian Marcu</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-27">2023-01-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;551 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="content" id="content"><p>A well-liked software design pattern that enables the creation and deployment of independently scalable and maintainable services is the microservices architecture. One of the key benefits of this architecture is its resiliency - the ability to withstand failures and continue functioning without interruption.</p>
+<p>There are many in which microservices architecture can improve resiliency and help ensure that your applications remain available and responsive in the face of unexpected events. My personal experience has shown that microservices primarily brought four benefits:</p>
+<ol>
+<li>
+<p>Scalability: The increased scalability that microservices enable is one of their main benefits.
+Each service operates as a separate entity, so it can be scaled up or down without affecting the system&rsquo;s other services.</p>
+</li>
+<li>
+<p>Resilience: Enhanced resilience is another advantage of microservices.
+The other services can keep running if one fails, minimizing downtime and enhancing reliability.</p>
+</li>
+<li>
+<p>Development Speed: Microservices can also hasten the development and deployment processes.
+Developers can work on multiple services simultaneously because each service is a standalone unit, which speeds up the process of creating a new feature.</p>
+</li>
+<li>
+<p>Flexibility: Due to the high degree of flexibility that microservices provide, developers are free to select the ideal technology stack for each service.</p>
+</li>
+</ol>
+<p>Sounds good right? Well sometimes. When attempting to map the entire flow of data in my head, there were numerous times when I cursed my days.
+Documentation is never perfect. In addition, I&rsquo;m attempting to map the flow according to business logic.
+Reading outdated code and designs takes time, and dealing with microservices when attempting to connect business to data flow makes the challenge even more difficult.
+Based on my personal experience with microservices, the three primary issues I can identify are:</p>
+<ol>
+<li>
+<p>Complexity: Increasing complexity is one of the main problems with microservices.
+It might be tricky to debug and manage the system when there are several services involved since it can be difficult to grasp how everything fits together.</p>
+</li>
+<li>
+<p>Testing: Testing presents another problem because it can be challenging to test every service in the system at once, particularly when services are upgraded or modified.</p>
+</li>
+<li>
+<p>Price: Compared to a monolithic design, microservices can be more expensive to install and maintain.
+This strategy can end up being more expensive than a monolithic design due to the expense of deploying and administering several services as well as the added complexity.</p>
+</li>
+</ol>
+<p>While having experience with big enterprise software, both on microservice and monolithic, I always like to think from a startup perspective because startups have to take fast decisions and iterate at an alarming speed. Making the decision to use a microservice architecture in a startup context might be difficult.
+On the one hand, the benefits of increased development speed, resilience, and scalability might be highly alluring.
+On the other hand, it is important to take into account the financial implications, testing difficulties, and increasing complexity.
+The ideal strategy will depend on the startup&rsquo;s size, architecture at the moment, and resources available for development and deployment.</p>
+<p>When thinking from a bussiness perspective this has many implications that I will detail in-depth in a future article.</p>
+<p>In conclusion, microservice architecture is a strong strategy that can benefit a startup greatly.
+However, the choice of whether or not to use this strategy must be made after giving considerable thought to the benefits and drawbacks as well as the resources at hand.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-01-27</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://adrian-marcu.com/another-perspective-on-microservices/" data-title="Another perspective on microservices architecture"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://adrian-marcu.com/another-perspective-on-microservices/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://adrian-marcu.com/another-perspective-on-microservices/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/system-overdesign/" class="prev" rel="prev" title="Pitfalls when overdesigning a system."><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Pitfalls when overdesigning a system.</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Designed by Adrian Marcu
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
