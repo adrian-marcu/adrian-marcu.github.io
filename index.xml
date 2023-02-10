@@ -15,7 +15,7 @@
 There are many in which microservices architecture can improve resiliency and help ensure that your applications remain available and responsive in the face of unexpected events. My personal experience has shown that microservices primarily brought four benefits:]]></description>
 </item>
 <item>
-    <title>Pitfalls when overdesigning a system.</title>
+    <title>Pitfalls when overdesigning a system</title>
     <link>https://adrian-marcu.com/system-overdesign/</link>
     <pubDate>Fri, 20 Jan 2023 14:16:53 &#43;0200</pubDate>
     <author>Adrian Marcu</author>

@@ -4,15 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Pitfalls when overdesigning a system. - Adrian Marcu</title><meta name="Description" content="A blog about the pitfalls of overdesigning a system"><meta property="og:title" content="Pitfalls when overdesigning a system." />
+        <title>Pitfalls when overdesigning a system - Adrian Marcu</title><meta name="Description" content="A blog about the pitfalls of overdesigning a system"><meta property="og:title" content="Pitfalls when overdesigning a system" />
 <meta property="og:description" content="A blog about the pitfalls of overdesigning a system" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://adrian-marcu.com/system-overdesign/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://adrian-marcu.com/system-overdesign/" /><meta property="og:image" content="https://adrian-marcu.com/system-overdesign/complex-system.webp"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-01-20T14:16:53+02:00" />
 <meta property="article:modified_time" content="2023-01-20T14:16:53+02:00" /><meta property="og:site_name" content="Adrian Marcu Senior Software Engineer Freelancer" />
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Pitfalls when overdesigning a system."/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://adrian-marcu.com/system-overdesign/complex-system.webp"/>
+<meta name="twitter:title" content="Pitfalls when overdesigning a system"/>
 <meta name="twitter:description" content="A blog about the pitfalls of overdesigning a system"/>
 <meta name="application-name" content="My cool siteeeee">
 <meta name="apple-mobile-web-app-title" content="My cool siteeeee"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -23,12 +24,17 @@
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Pitfalls when overdesigning a system.",
+        "headline": "Pitfalls when overdesigning a system",
         "inLanguage": "en-us",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/adrian-marcu.com\/system-overdesign\/"
-        },"genre": "posts","wordcount":  715 ,
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/adrian-marcu.com\/system-overdesign\/complex-system.webp",
+                            "width":  567 ,
+                            "height":  276 
+                        }],"genre": "posts","wordcount":  720 ,
         "url": "https:\/\/adrian-marcu.com\/system-overdesign\/","datePublished": "2023-01-20T14:16:53+02:00","dateModified": "2023-01-20T14:16:53+02:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -83,29 +89,62 @@
             </a></div>
     </div>
 </header><main class="main">
-                <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Pitfalls when overdesigning a system.</h1><div class="post-meta">
+                <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Pitfalls when overdesigning a system</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://adrian-marcu.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Adrian Marcu</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-20">2023-01-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;715 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-20">2023-01-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;720 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
-        </div><div class="content" id="content"><p>From experience I can tell you that I&rsquo;ve seen this pattern many times. I was getting too excited when starting a new project and I would think of alot of side features rather than doing the minimum viable solution. It&rsquo;s almost like when you get distracted doing all the side quests first in a video game and in the end you can&rsquo;t find the motivation to do the very thing that got you interested in the first place.</p>
+        </div><div class="featured-image"><img
+        rel="preload"
+        fetchpriority="high"
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/system-overdesign/complex-system.webp"
+        data-srcset="/system-overdesign/complex-system.webp, /system-overdesign/complex-system.webp 1.5x, /system-overdesign/complex-system.webp 2x"
+        data-sizes="auto"
+        alt="/system-overdesign/complex-system.webp"
+        title="A blog about the pitfalls of overdesigning a system" /></div><div class="content" id="content"><p>From experience I can tell you that I&rsquo;ve seen this pattern many times. I was getting too excited when starting a new project and I would think of alot of side features rather than doing the minimum viable solution. It&rsquo;s almost like when you get distracted doing all the side quests first in a video game and in the end you can&rsquo;t find the motivation to do the very thing that got you interested in the first place.</p>
 <p>I was thinking of complex security, filters, validators, permissions, low level design, code style, CI/CD pipelines, documentation and the list can continue. As you can see I was not focusing on the actual value that the system would provide. The core functionality. The <strong>Minimum Viable Offer</strong>.</p>
-<p>As you can see the solution of this is to take a step back. Cut the excitement, collect yourself and think clearly.</p>
+<p>As you can see the solution of this is to take a step back. Cut the excitement, collect yourself and <strong>think clearly</strong>.</p>
 <p>&ldquo;<em>A complex system that works is invariably found to have evolved from a simple system that worked</em>&rdquo; according to John Gall&rsquo;s law, which bears his name.
 This idea is relevant to software engineering, especially when it comes to designing and prototyping intricate systems.</p>
+<p><figure><a class="lightgallery" href="/system-overdesign/gallslaw.webp" title="Gall&amp;rsquo;s Law" data-thumbnail="/system-overdesign/gallslaw.webp" data-sub-html="<h2>Gall&#39;s Law</h2><p>Gall&amp;rsquo;s Law</p>">
+        <img
+            rel="preload"
+            fetchpriority="high"
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/system-overdesign/gallslaw.webp"
+            data-srcset="/system-overdesign/gallslaw.webp, /system-overdesign/gallslaw.webp 1.5x, /system-overdesign/gallslaw.webp 2x"
+            data-sizes="auto"
+            alt="/system-overdesign/gallslaw.webp" width="610" height="524" />
+    </a><figcaption class="image-caption">Gall's Law</figcaption>
+    </figure></p>
 <p>It can be tempting to try to address every issue and foresee every requirement when designing a complicated system.
 This strategy, though, might result in overengineering and a system that is difficult to comprehend and maintain.</p>
 <p>Simple systems are more likely to function and develop over time, as Gall&rsquo;s Law serves as a reminder.
-Therefore, software engineers should start with a minimally viable solution and gradually add complexity as needed when prototyping and designing complex systems.</p>
-<p>For example in software engineering nowadats when designing a microservice system, it is important to keep in mind the principle of simplicity. A complex system that is difficult to understand and maintain is likely to cause problems in the long run. By keeping the design of the system simple, software engineers can ensure that it is more likely to work and be able to evolve over time. The best method for creating systems that function is to start by creating simple systems that pass the environment&rsquo;s current selection tests, then gradually improve them.</p>
-<p>This enables a more gradual and evolutionary approach, which reduces the likelihood of creating a system that is difficult to comprehend and maintain.</p>
+Therefore, software engineers should start with a <strong>minimally viable solution</strong> and <strong>gradually</strong> add complexity as needed when prototyping and designing complex systems.</p>
+<p>For example in software engineering nowadays, when designing a microservice system, it is important to keep in mind the <strong>principle of simplicity</strong>. A complex system that is difficult to understand and maintain is likely to cause problems in the long run. By keeping the design of the system simple, software engineers can ensure that it is more likely to work and be able to evolve over time. The best method for creating systems that function is to start by creating simple systems that pass the environment&rsquo;s current selection tests, then gradually improve them.</p>
+<p>This enables a more gradual and <strong>evolutionary approach</strong>, which reduces the likelihood of creating a system that is difficult to comprehend and maintain.</p>
 <p>When beginning to design a complex system, another trap to watch out for is trying to foresee all potential future needs and requirements.
 This might result in a system that is overengineered and unusable due to its complexity.
-It is preferable to concentrate on the needs and requirements of the present and then iteratively enhance and evolve the system over time.</p>
+It is preferable to concentrate on the needs and requirements of the <strong>present</strong> and then <strong>iteratively enhance</strong> and <strong>evolve</strong> the system over time.</p>
 <p>Google&rsquo;s Waymo self-driving car project, which was in its early stages of development, provides one illustration of how complex systems cannot be prototyped without first being subjected to environmental testing.
 Without performing adequate environmental testing, Google concentrated its early efforts on creating the algorithms and sensors for the self-driving car.</p>
 <p>When the car was tested on actual roads, this caused a number of problems.
 For instance, the car&rsquo;s sensors had trouble spotting certain things, like bicycles, and the navigation system had trouble navigating in certain weather conditions, like snow or heavy rain.
 These problems weren&rsquo;t identified until the car was tested on actual roads, which added time and money to the development process.</p>
+<p><figure><a class="lightgallery" href="/system-overdesign/gc.webp" title="Google Waymo car" data-thumbnail="/system-overdesign/gc.webp" data-sub-html="<h2>Google Waymo car</h2><p>Google Waymo car</p>">
+        <img
+            rel="preload"
+            fetchpriority="high"
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/system-overdesign/gc.webp"
+            data-srcset="/system-overdesign/gc.webp, /system-overdesign/gc.webp 1.5x, /system-overdesign/gc.webp 2x"
+            data-sizes="auto"
+            alt="/system-overdesign/gc.webp" width="900" height="596" />
+    </a><figcaption class="image-caption">Google Waymo car</figcaption>
+    </figure></p>
 <p>The 2013 introduction of the healthcare.gov website serves as another example of how complicated systems shouldn&rsquo;t be prototypically tested before being put into use.
 A group of contractors created the website as a component of the Affordable Care Act, often known as Obamacare.</p>
 <p>When the website first went up, it had a number of technical problems, including slow page loads, error warnings, and trouble setting up user accounts.
@@ -122,7 +161,7 @@ Instead, they ought to concentrate on the demands and needs of the moment before
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://adrian-marcu.com/system-overdesign/" data-title="Pitfalls when overdesigning a system."><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://adrian-marcu.com/system-overdesign/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://adrian-marcu.com/system-overdesign/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://adrian-marcu.com/system-overdesign/" data-title="Pitfalls when overdesigning a system"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://adrian-marcu.com/system-overdesign/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://adrian-marcu.com/system-overdesign/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
