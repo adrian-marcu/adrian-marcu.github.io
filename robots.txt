@@ -6,6 +6,12 @@ Disallow: /css/
 
 Disallow: /cdn-cgi/
 
+User-agent: Googlebot
+Disallow: /*.xml$
+
+User-agent: *
+Disallow: /*.xml$
+
 User-agent: MJ12bot
 Disallow: /
 
