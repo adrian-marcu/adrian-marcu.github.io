@@ -4,7 +4,11 @@ Disallow: /images/
 Disallow: /js/
 Disallow: /css/
 
+User-agent: *
 Disallow: /cdn-cgi/
+Disallow: /cdn-cgi/bm/cv/
+Disallow: /cdn-cgi/challenge-platform/
+Disallow: /cdn-fpw/sxg/
 
 User-agent: Googlebot
 Disallow: /*.xml$
