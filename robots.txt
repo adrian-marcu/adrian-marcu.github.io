@@ -15,6 +15,7 @@ Disallow: /*.xml$
 
 User-agent: *
 Disallow: /*.xml$
+Allow: /sitemap.xml
 
 User-agent: MJ12bot
 Disallow: /
