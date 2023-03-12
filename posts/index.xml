@@ -3,7 +3,15 @@
         <title>All Posts - Adrian Marcu</title>
         <link>https://adrian-marcu.com/posts/</link>
         <description>All Posts | Adrian Marcu</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 09 Feb 2023 19:18:16 &#43;0200</lastBuildDate><atom:link href="https://adrian-marcu.com/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 12 Mar 2023 14:16:53 &#43;0200</lastBuildDate><atom:link href="https://adrian-marcu.com/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Pitfalls when overdesigning a system</title>
+    <link>https://adrian-marcu.com/system-overdesign/</link>
+    <pubDate>Sun, 12 Mar 2023 14:16:53 &#43;0200</pubDate>
+    <author>Adrian Marcu</author>
+    <guid>https://adrian-marcu.com/system-overdesign/</guid>
+    <description><![CDATA[From experience I can tell you that I&rsquo;ve seen this pattern many times. I was getting too excited when starting a new project and I would think of alot of side features rather than doing the minimum viable solution. It&rsquo;s almost like when you get distracted doing all the side quests first in a video game and in the end you can&rsquo;t find the motivation to do the very thing that got you interested in the first place.]]></description>
+</item>
+<item>
     <title>Freelancing Isn&#39;t as Scary as you Think</title>
     <link>https://adrian-marcu.com/freelancing/</link>
     <pubDate>Thu, 09 Feb 2023 19:18:16 &#43;0200</pubDate>
