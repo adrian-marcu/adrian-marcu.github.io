@@ -3,9 +3,18 @@
         <title>Adrian Marcu</title>
         <link>https://adrian-marcu.com/</link>
         <description>Adrian Marcu Senior Software Engineer Freelancer</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 12 Mar 2023 14:16:53 &#43;0200</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 27 Mar 2023 00:42:45 &#43;0200</lastBuildDate>
             <atom:link href="https://adrian-marcu.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Another perspective on microservices architecture</title>
+    <link>https://adrian-marcu.com/another-perspective-on-microservices/</link>
+    <pubDate>Mon, 27 Mar 2023 00:42:45 &#43;0200</pubDate>
+    <author>Adrian Marcu</author>
+    <guid>https://adrian-marcu.com/another-perspective-on-microservices/</guid>
+    <description><![CDATA[A well-liked software design pattern that enables the creation and deployment of independently scalable and maintainable services is the microservices architecture. One of the key benefits of this architecture is its resiliency - the ability to withstand failures and continue functioning without interruption.
+There are many in which microservices architecture can improve resiliency and help ensure that your applications remain available and responsive in the face of unexpected events. My personal experience has shown that microservices primarily brought four benefits:]]></description>
+</item>
+<item>
     <title>Pitfalls when overdesigning a system</title>
     <link>https://adrian-marcu.com/system-overdesign/</link>
     <pubDate>Sun, 12 Mar 2023 14:16:53 &#43;0200</pubDate>
