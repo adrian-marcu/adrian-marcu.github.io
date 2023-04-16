@@ -3,7 +3,16 @@
         <title>All Posts - Adrian Marcu</title>
         <link>https://adrian-marcu.com/posts/</link>
         <description>All Posts | Adrian Marcu</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 27 Mar 2023 00:42:45 &#43;0200</lastBuildDate><atom:link href="https://adrian-marcu.com/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 16 Apr 2023 17:11:21 &#43;0300</lastBuildDate><atom:link href="https://adrian-marcu.com/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Redefining Development: The Future of AI in the Hands of Developers</title>
+    <link>https://adrian-marcu.com/redefining-development/</link>
+    <pubDate>Sun, 16 Apr 2023 17:11:21 &#43;0300</pubDate>
+    <author>Adrian Marcu</author>
+    <guid>https://adrian-marcu.com/redefining-development/</guid>
+    <description><![CDATA[Artificial intelligence (AI) is becoming a more significant component of software development as technology progresses. Developers who adopt AI technology will have a significant competitive advantage in the years to come as it has the potential to revolutionize the way we design, build, and maintain software. This article will examine the potential applications of AI in software development for both developers and businesses.
+AI and Software Design Software design is one of the most important aspects of software development, and AI has the potential to revolutionize the way we approach it.]]></description>
+</item>
+<item>
     <title>Another perspective on microservices architecture</title>
     <link>https://adrian-marcu.com/another-perspective-on-microservices/</link>
     <pubDate>Mon, 27 Mar 2023 00:42:45 &#43;0200</pubDate>
