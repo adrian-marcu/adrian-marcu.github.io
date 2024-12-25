@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>🚀 My Journey into Building a SaaS Product: A Wild Ride - Adrian Marcu</title><meta name="Description" content="Explore the journey of building a SaaS product with insights on choosing the right tech stack, navigating AWS, setting up CI/CD pipelines, and automating infrastructure with Terraform. A startup founder’s guide packed with lessons from real-world challenges."><meta property="og:title" content="🚀 My Journey into Building a SaaS Product: A Wild Ride" />
+<meta property="og:description" content="Explore the journey of building a SaaS product with insights on choosing the right tech stack, navigating AWS, setting up CI/CD pipelines, and automating infrastructure with Terraform. A startup founder’s guide packed with lessons from real-world challenges." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://adrian-marcu.com/my-journey-into-building-a-saas-product-part-1/" /><meta property="og:image" content="https://adrian-marcu.com/my-journey-into-building-a-saas-product-part-1/Myjourney.webp"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-12-25T17:11:21+03:00" />
+<meta property="article:modified_time" content="2024-12-25T17:11:21+03:00" /><meta property="og:site_name" content="Adrian Marcu Senior Software Engineer Freelancer" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://adrian-marcu.com/my-journey-into-building-a-saas-product-part-1/Myjourney.webp"/>
+<meta name="twitter:title" content="🚀 My Journey into Building a SaaS Product: A Wild Ride"/>
+<meta name="twitter:description" content="Explore the journey of building a SaaS product with insights on choosing the right tech stack, navigating AWS, setting up CI/CD pipelines, and automating infrastructure with Terraform. A startup founder’s guide packed with lessons from real-world challenges."/>
+
+
+<meta name="application-name" content="Adrian Marcu Senior Software Engineer Freelancer">
+<meta name="apple-mobile-web-app-title" content="Adrian Marcu Senior Software Engineer Freelancer"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://adrian-marcu.com/my-journey-into-building-a-saas-product-part-1/" /><link rel="prev" href="https://adrian-marcu.com/redefining-development/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><meta name="google-site-verification" content="Wro9HI7Q_doZSmL3CpIgGs2u8E-DicJ1NJsmS6yYuRM" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "🚀 My Journey into Building a SaaS Product: A Wild Ride",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/adrian-marcu.com\/my-journey-into-building-a-saas-product-part-1\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/adrian-marcu.com\/my-journey-into-building-a-saas-product-part-1\/Myjourney.webp",
+                            "width":  1792 ,
+                            "height":  1024 
+                        }],"genre": "posts","wordcount":  697 ,
+        "url": "https:\/\/adrian-marcu.com\/my-journey-into-building-a-saas-product-part-1\/","datePublished": "2024-12-25T17:11:21+03:00","dateModified": "2024-12-25T17:11:21+03:00","publisher": {
+            "@type": "Organization",
+            "name": "Adrian Marcu","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/adrian-marcu.com\/images\/AdrianNewLogo.png",
+                    "width":  442 ,
+                    "height":  78 
+                }},"author": {
+                "@type": "Person",
+                "name": "Adrian Marcu"
+            },"description": "Explore the journey of building a SaaS product with insights on choosing the right tech stack, navigating AWS, setting up CI/CD pipelines, and automating infrastructure with Terraform. A startup founder’s guide packed with lessons from real-world challenges."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" class = "hreftitle" title="Adrian Marcu"><img
+        rel="preload"
+        fetchpriority="high"
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/AdrianNewLogo.png"
+        data-srcset="/images/AdrianNewLogo.png, /images/AdrianNewLogo.png 1.5x, /images/AdrianNewLogo.png 2x"
+        data-sizes="auto"
+        alt="/images/AdrianNewLogo.png"
+        title="/images/AdrianNewLogo.png" width="442" height="78" /></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Posts"> Posts </a><a class="menu-item" href="/about/" title="About"> About </a><a class="menu-item" href="/contact/" title="Contact"> Contact </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" class = "hreftitle" title="Adrian Marcu"><img
+        rel="preload"
+        fetchpriority="high"
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/AdrianNewLogo.png"
+        data-srcset="/images/AdrianNewLogo.png, /images/AdrianNewLogo.png 1.5x, /images/AdrianNewLogo.png 2x"
+        data-sizes="auto"
+        alt="/images/AdrianNewLogo.png"
+        title="/images/AdrianNewLogo.png" width="442" height="78" /></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="Posts">Posts</a><a class="menu-item" href="/about/" title="About">About</a><a class="menu-item" href="/contact/" title="Contact">Contact</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">🚀 My Journey into Building a SaaS Product: A Wild Ride</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://adrian-marcu.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Adrian Marcu</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-12-25">2024-12-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;697 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        rel="preload"
+        fetchpriority="high"
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/my-journey-into-building-a-saas-product-part-1/Myjourney.webp"
+        data-srcset="/my-journey-into-building-a-saas-product-part-1/Myjourney.webp, /my-journey-into-building-a-saas-product-part-1/Myjourney.webp 1.5x, /my-journey-into-building-a-saas-product-part-1/Myjourney.webp 2x"
+        data-sizes="auto"
+        alt="/my-journey-into-building-a-saas-product-part-1/Myjourney.webp"
+        title="Explore the journey of building a SaaS product with insights on choosing the right tech stack, navigating AWS, setting up CI/CD pipelines, and automating infrastructure with Terraform. A startup founder’s guide packed with lessons from real-world challenges." /></div><div class="content" id="content"><p>I took a leap into the crazy world of building SaaS products, and I have to say—it’s been a wild ride. Along the way, I’ve learned a lot about the tech stacks popular among startups, and I wanted to share my thoughts and experiences.</p>
+<hr>
+<h2 id="starting-the-startup-journey">Starting the Startup Journey</h2>
+<p>So, what do you do when you have a solid technical background, gained from working in big companies, and decide to start your own startup? You start by <strong>choosing the right tech stack for your product</strong>.</p>
+<p>But here’s the twist: How do you choose a tech stack when you don’t even know what to build in the first place?</p>
+<h3 id="the-research-rabbit-hole-">The Research Rabbit Hole 🕳️</h3>
+<p>The first logical step is to research the most popular tech stacks among startups and figure out which one fits your needs. And this is where the gates of hell open.</p>
+<p>Oh. My. God.<br>
+I’ve never seen so many opinions on what tech stack to use. Everyone seems to have their own take—and somehow, they’re all right.</p>
+<p>I dove into blog posts, forums, and Reddit threads, only to end up more confused than when I started. So, I decided to take a step back and look at the bigger picture:</p>
+<hr>
+<h2 id="popular-tech-stacks-among-startups">Popular Tech Stacks Among Startups</h2>
+<p>The two most popular ones stood out:</p>
+<ol>
+<li><strong>MERN Stack</strong>: MongoDB, Express, React, Node.js</li>
+<li><strong>MEAN Stack</strong>: MongoDB, Express, Angular, Node.js</li>
+</ol>
+<p>Both looked solid, but there was a problem—I was a backend developer with zero frontend experience.</p>
+<hr>
+<h2 id="building-with-what-i-know">Building with What I Know</h2>
+<p>Having spent years mastering the <strong>Java ecosystem</strong>, I decided to stick to what I knew. I remembered the golden rule:</p>
+<blockquote>
+<p>“Start with what you know and build from there.”</p>
+</blockquote>
+<h3 id="step-1-java-microservice">Step 1: Java Microservice</h3>
+<p>I started with a Java microservice, which gave me an executable JAR file. But how do you run that? I loved the idea of microservices and decided to use <strong>Docker</strong> for containerization.</p>
+<h3 id="step-2-deploying-on-the-cloud">Step 2: Deploying on the Cloud</h3>
+<p>With a Java microservice running in a Docker container, the next question was: How do I deploy it? I decided to go with <strong>AWS</strong>. I was familiar with Google Cloud Platform and Microsoft Azure from previous jobs, and I knew their flaws a little too well.</p>
+<p>AWS seemed like a great place to start. But then came the second circle of hell&hellip;</p>
+<hr>
+<h2 id="the-aws-dilemma">The AWS Dilemma</h2>
+<p>AWS has so many services that I didn’t even know where to start. I spent <strong>two months</strong> just reading about AWS services, trying to figure out how they worked together, and scouring Reddit like a madman.</p>
+<p>Working in big corporations had planted this question in my head:</p>
+<blockquote>
+<p>“What if I need to scale? What if I get so many users that my system can’t handle it? What if I go viral and my system crashes?”</p>
+</blockquote>
+<p>Spoiler: This is the <strong>worst</strong> way to think about your startup. But I went with it anyway.</p>
+<p>After tons of research, I knew I wanted something Kubernetes-like but simpler. I chose <strong>AWS ECS (Elastic Container Service)</strong> because it was easier to set up, and I could use <strong>Fargate</strong> to run my containers.</p>
+<hr>
+<h2 id="adding-cicd-to-the-mix">Adding CI/CD to the Mix</h2>
+<p>Okay, so now I had a Java microservice running in a Docker container, deployed on AWS ECS Fargate. The next challenge was setting up a <strong>CI/CD pipeline</strong>.</p>
+<h3 id="step-3-setting-up-cicd">Step 3: Setting Up CI/CD</h3>
+<p>I had no prior experience in DevOps or SRE, and the sheer number of tools available made my head spin. I eventually chose <strong>GitHub Actions</strong> because:</p>
+<ol>
+<li>It was free (important for a startup).</li>
+<li>It integrated seamlessly with GitHub, where my code was hosted.</li>
+</ol>
+<p>At first, I manually created services in AWS by clicking through the UI—a total nightmare. I knew I needed to automate this process, but I had no clue where to start.</p>
+<hr>
+<h2 id="automating-infrastructure-with-terraform">Automating Infrastructure with Terraform</h2>
+<p>I started reading about <strong>Infrastructure as Code (IaC)</strong> and asked friends for advice. The consensus? Use <strong>Terraform</strong>.</p>
+<p>Terraform was relatively easy to learn and had extensive online resources. But let me tell you—trying to understand its syntax while already overwhelmed with everything else felt like a nightmare.</p>
+<p>Just when I thought I was drowning, something truly magical happened to the world, and life would never be the same again!</p>
+<hr>
+<p><strong>To be continued&hellip;</strong></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-12-25</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://adrian-marcu.com/my-journey-into-building-a-saas-product-part-1/" data-title="🚀 My Journey into Building a SaaS Product: A Wild Ride" data-via="adrianmark01"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://adrian-marcu.com/my-journey-into-building-a-saas-product-part-1/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://adrian-marcu.com/my-journey-into-building-a-saas-product-part-1/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/redefining-development/" class="prev" rel="prev" title="Redefining Development: The Future of AI in the Hands of Developers"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Redefining Development: The Future of AI in the Hands of Developers</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Designed by Adrian Marcu
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
