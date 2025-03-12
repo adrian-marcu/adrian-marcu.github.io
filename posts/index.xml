@@ -3,7 +3,15 @@
         <title>All Posts - Adrian Marcu</title>
         <link>https://adrian-marcu.com/posts/</link>
         <description>All Posts | Adrian Marcu</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 25 Dec 2024 17:11:21 &#43;0300</lastBuildDate><atom:link href="https://adrian-marcu.com/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 12 Mar 2025 17:54:22 &#43;0300</lastBuildDate><atom:link href="https://adrian-marcu.com/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>🚀 My Journey into Building a SaaS Product: A Wild Ride 2</title>
+    <link>https://adrian-marcu.com/my-journey-into-building-a-saas-product-part-2/</link>
+    <pubDate>Wed, 12 Mar 2025 17:54:22 &#43;0300</pubDate>
+    <author>Adrian Marcu</author>
+    <guid>https://adrian-marcu.com/my-journey-into-building-a-saas-product-part-2/</guid>
+    <description><![CDATA[Ever Wondered What Happens When a Backend Dev Builds a SaaS from Scratch? Buckle up, folks—because I’m about to take you on the second leg of my wild ride building a SaaS product from the ground up. If you missed Part 1, I was knee-deep in Java microservices, Docker, AWS chaos, and Terraform wizardry. Now? I’ve got a CI/CD pipeline humming, but the frontend’s staring me down like a dragon I’ve never fought before.]]></description>
+</item>
+<item>
     <title>🚀 My Journey into Building a SaaS Product: A Wild Ride</title>
     <link>https://adrian-marcu.com/my-journey-into-building-a-saas-product-part-1/</link>
     <pubDate>Wed, 25 Dec 2024 17:11:21 &#43;0300</pubDate>
