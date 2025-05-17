@@ -34,7 +34,7 @@
                             "url": "https:\/\/adrian-marcu.com\/images\/avatar-adrian.webp",
                             "width":  482 ,
                             "height":  439 
-                        }],"genre": "page","wordcount":  32 ,
+                        }],"genre": "page","wordcount":  33 ,
         "url": "https:\/\/adrian-marcu.com\/contact\/","datePublished": "2022-11-20T15:32:55+02:00","dateModified": "2022-11-20T15:32:55+02:00","publisher": {
             "@type": "Organization",
             "name": "Adrian Marcu","logo": {
@@ -95,7 +95,7 @@
     </div>
 </header><main class="main">
                 <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Contact me</h1><div class="content" id="content"><h1 id="ready-to-collaborate-and-bring-ideas-to-life">Ready to collaborate and bring ideas to life?</h1>
-<h5 id="hit-me-up-whether-its-brainstorming-projects-swapping-fresh-concepts-or-just-linking-up-to-grow-our-circle-im-game">Hit me up! Whether it’s brainstorming projects, swapping fresh concepts, or just linking up to grow our circle, I’m game.</h5>
+<h5 id="hit-me-up-whether-its-brainstorming-projects-swapping-fresh-concepts-or-just-linking-up-to-grow-our-circle-im-game">Hit me up! Whether it&rsquo;s brainstorming projects, swapping fresh concepts, or just linking up to grow our circle, I&rsquo;m game.</h5>
 <style>
   .contact {
     padding: 2.5rem; /* Consistent padding on all sides */
@@ -105,7 +105,7 @@
     background: #f7f7f7;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-    box-sizing: border-box; /* Ensures padding doesn’t push width */
+    box-sizing: border-box; /* Ensures padding doesn't push width */
   }
 
   .form-group {
@@ -168,6 +168,32 @@
     margin-right: 0.5rem;
     color: #4a4a4a;
   }
+  
+  .or-divider {
+    text-align: center;
+    margin: 2.5rem 0;
+    position: relative;
+  }
+  
+  .or-divider::before, .or-divider::after {
+    content: "";
+    display: inline-block;
+    width: 40%;
+    height: 1px;
+    background: #e0e0e0;
+    vertical-align: middle;
+  }
+  
+  .or-divider span {
+    padding: 0 15px;
+    font-weight: 600;
+    color: #777;
+  }
+  
+  .calendar-container {
+    text-align: center;
+    margin: 1.5rem 0;
+  }
 </style>
 <div class="contact">
   <form method="post" action="https://forms.un-static.com/forms/3eec99387bf56de24adf7f477d51be677ceea5cd">
@@ -187,8 +213,29 @@
       <button class="button" name="submit" type="submit">Send</button>
     </div>
   </form>
-</div>
-</div></div></div>
+  <div class="or-divider">
+    <span>OR</span>
+  </div>
+  <div class="calendar-container">
+    <!-- Google Calendar Appointment Scheduling begin -->
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+    <script>
+    (function() {
+      var target = document.currentScript;
+      window.addEventListener('load', function() {
+        calendar.schedulingButton.load({
+          url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2ZGN-5lZU8L0Mff1MyHqT7sv4M6jFdlRtvAXAdFQUXJXJDH7A2m1rsNRIX6m1N4DFbVzk6UuUl?gv=true',
+          color: '#1e1e1e',
+          label: 'Book an appointment',
+          target,
+        });
+      });
+    })();
+    </script>
+    <!-- end Google Calendar Appointment Scheduling -->
+  </div>
+</div></div></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Designed by Adrian Marcu
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
